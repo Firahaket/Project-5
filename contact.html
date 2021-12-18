@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <script type="text/JavaScript" src="../main.js"></script>
+    
+    <div class="navbar">
+        <a href="../index.html" class="logo"><img src="../img/logo.png" alt="logo" title="logo" class="plogo">Typedin<span>Beige</span></a>
+
+
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                <a href="about.html" >About</a>
+                <a href="products.html" >Products</a>
+                <a href="clients.html" >Clients</a>
+                <a href="contact.html" >Contact</a>
+              </div>
+            </div>
+            
+           <span class="menu" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+   </div>
+
+    <div class="container-fluid">
+        <div class="b">
+            <label class="switch">
+            <input type="checkbox" onclick="myFunction()">
+            <span class="slider round"></span>
+            </label>
+        </div>
+                <div class="row">
+                    <div class="col-sm-9 col-md-6 col-lg-8">
+
+                        <form id="contact" action="/action_page.php">Contact us: </form>
+                        <div class="tab">Name:
+                            <p><input placeholder="First name..." oninput="this.className;''" name="fname"></p>
+                            <p><input placeholder="Last name..." oninput="this.className;''" name="lname"></p>
+                        </div>
+                        <div class="tab">Contacnt Info:
+                            <p><input placeholder="E-mail..." oninput="this.className;''" name="email"></p>
+                            <p><input placeholder="Phone..." oninput="this.className;''" name="phone"></p>
+                        </div>
+                        <div class="tab">Birthday:
+                            <p><input placeholder="dd" oninput="this.className;''" name="dd"></p>
+                            <p><input placeholder="mm" oninput="this.className;''" name="mm"></p>
+                            <p><input placeholder="yyyy" oninput="this.className;''" name="yyyy"></p>
+                        </div>
+                        <div style="overflow:auto;">
+                            <div style="float:right;">
+                            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                        </div>
+                       </div>
+                    <!-- Circles which indicates the steps of the form: -->
+                    <div style="text-align:center;margin-top:40px;">
+                      <span class="step"></span>
+                      <span class="step"></span>
+                      <span class="step"></span>
+                      <span class="step"></span>
+                    </div>
+                  </form>
+    
+
+                        
+              </div>
+    
+            <div class="col-sm-3 col-md-6 col-lg-4">
+                <h3>Contact info:</h3>
+                <ul>
+                   <li><a href="#" title="Click to follow link">Instagram page</a></li>
+                   <li><a href="#" title="Click to follow link">E-mail</a></li>
+                   <li><a href="#" title="Click to follow link">Number</a></li>
+                </ul>
+            </div>
+    </div>   
+    
+</body>
+</html>
+
+
+<!--
+<h3>Contact us</h3>
+
+                        <form action="">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name">
+
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email">
+
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10">Type your text here...</textarea>
+
+                            <input type="submit" class="send-message" value="Send message">
+                        </form>
+                    </div=>
+                -->
