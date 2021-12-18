@@ -1,0 +1,372 @@
+:root {
+  --primary-color: #f1f0e5;
+  --secondary-color: #ccc1ca;
+  --tertiary-color: #eee7ec;
+}
+
+body {
+  background: var(--primary-color);
+  font-family: 'Abril Fatface', cursive;
+}
+
+.navbar {
+  padding: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.8em;
+}
+
+.navbar .logo .plogo {
+  border-radius: 132px 132px 132px 132px;
+  -webkit-border-radius: 132px 132px 132px 132px;
+  -moz-border-radius: 132px 132px 132px 132px;
+}
+
+.navbar span {
+  color: var(--secondary-color);
+}
+
+.navbar .menu {
+  color: black;
+}
+
+.text {
+  position: absolute;
+  font-size: 30px;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  left: 95%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.switch .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #181717;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switch input:checked + .slider {
+  background-color: #e3e7eb;
+}
+
+.switch input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #e8eaeb;
+          box-shadow: 0 0 1px #e8eaeb;
+}
+
+.switch input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.switch .slider.round {
+  border-radius: 34px;
+}
+
+.switch .slider.round:before {
+  border-radius: 70%;
+}
+
+.main .products {
+  max-width: 893px;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  padding: 3em;
+}
+
+.main .products div {
+  float: left;
+  padding: 40px;
+  width: 100px;
+  height: 170px;
+  position: relative;
+  -webkit-animation: glide 2s ease-in-out alternate infinite;
+  animation: glide 2s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes glide {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 0px;
+    top: 30px;
+  }
+}
+
+@keyframes glide {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 0px;
+    top: 30px;
+  }
+}
+
+.main .first {
+  top: 50%;
+  left: 25%;
+  position: absolute;
+}
+
+.main .second {
+  top: 50%;
+  left: 75%;
+  position: absolute;
+}
+
+.main .column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.main .products::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.name {
+  position: absolute;
+  font-size: 15px;
+  top: 95%;
+  left: 90%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 46px;
+  color: var(--primary-color);
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+  font-weight: bold;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 500px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-height: 697px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode .header {
+  color: var(--primary-color);
+}
+
+.dark-mode .main {
+  background-color: black;
+}
+
+.dark-mode .row {
+  background-color: black;
+}
+
+h3 {
+  padding: 20px;
+}
+
+blockquote {
+  font-size: 17px;
+}
+
+.lkk {
+  padding: 20px;
+}
+
+.lkk p {
+  font-size: 17px;
+}
+
+.lkk a {
+  text-decoration: none;
+}
+
+.lkk a:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container-fluid {
+  font-size: 17px;
+}
+
+.container-fluid .row {
+  padding: 10px;
+  /* Mark input boxes that gets an error on validation: */
+  /* Hide all steps by default: */
+  /* Make circles that indicate the steps of the form: */
+}
+
+.container-fluid .row #contact {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+.container-fluid .row h1 {
+  text-align: center;
+}
+
+.container-fluid .row input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+.container-fluid .row input.invalid {
+  background-color: #ffdddd;
+}
+
+.container-fluid .row .tab {
+  display: none;
+}
+
+.container-fluid .row button {
+  background-color: #04AA6D;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+.container-fluid .row button:hover {
+  opacity: 0.8;
+}
+
+.container-fluid .row #prevBtn {
+  background-color: #bbbbbb;
+}
+
+.container-fluid .row .step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.container-fluid .row .step.active {
+  opacity: 1;
+}
+
+.container-fluid .row .step.finish {
+  background-color: #04AA6D;
+}
+
+.container-fluid a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */
